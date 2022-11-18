@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255)
+}
+
+a,
+a:hover,
+a:visited {
+    color: unset;
+    text-decoration: none;
+}
+
+header {
+    background: linear-gradient(180deg, #b14700 0%, #000000 100%);
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ProjectAcuna-logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ProjectAcuna-logo-container.img {
+    width: 235px;
+}
+
+.ProjectAcuna-logo-container h1 {
+    margin-top: 15px;
+    font-size: 24px;
+}
+
+.ProjectAcuna-logo-container p {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.acuna-card {
+    background-color: #423628;
+    border-radius: 10px;
+    padding: 30px 10px;
+
+}
+
+.acuna-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#sales {
+    padding: 40px 10px;
+}
+
+.acuna-sales-title {
+    color: #ff8400;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.acuna-form-control-container {
+    margin-bottom: 16px;
+    max-width: 300px;
+}
+
+.acuna-form-control {
+    width: 100%;
+    height: 46px;
+    background-color: #ffffff;
+    border: 1px solid #ff7300;
+    border-radius: 5px;
+    color: #331a00;
+    padding: 0 20px;
+    font-size: 18px;
+}
+
+.acuna-sales-table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.acuna-sales-table thead {
+    height: 55px;
+    font-size: 16px;
+    color: #ffae00;
+    font-weight: 700;
+}
+
+.acuna-sales-table tbody {
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+}
+
+.acuna-sales-table tr {
+    height: 74px;
+    border-top: 1px solid #ffae00;
+}
+
+.acuna-sales-table tbody tr:hover>td {
+    background-color: #ad8d6f;
+}
+
+.acuna-sales-table tbody tr:nth-child(odd) {
+    background-color: #1d1812;
+}
+
+.acuna-red-btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.acuna-red-btn {
+    height: 45px;
+    width: 45px;
+    background: rgba(255, 107, 114, 0.1);
+    border: 1px solid #FF6B72;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.acuna-red-btn img {
+    width: 19px;
+}
+
+.show576 {
+    display: none;
+}
+
+.show992 {
+    display: none;
+}
+
+@media (min-width: 576px) {
+    .show576 {
+        display: table-cell;
+    }
+
+    .acuna-card {
+        padding: 35px;
+    }
+
+    .acuna-sales-table tr {
+        height: 55px;
+    }
+    
+    .acuna-sales-table tbody {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 992px) {
+    .show992 {
+        display: table-cell;
+    }
+    
+}
